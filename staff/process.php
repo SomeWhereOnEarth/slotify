@@ -1,10 +1,15 @@
 <?php
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "slotify";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "slotify";
+
+$servername = "us-cdbr-east-03.cleardb.com";
+$username = "b86ee8b785f9c5";
+$password = "bc878095";
+$dbname = "heroku_053062795ec22b7";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
