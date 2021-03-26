@@ -6,7 +6,7 @@
 
 	//$con = mysqli_connect("localhost", "root", "", "slotify");
 
-	$con = mysqli_connect("us-cdbr-east-03.cleardb.com", "b1c496e6919c3f", "1266051f", "heroku_da1df6b3d9cac50");
+	$con = mysqli_connect("us-cdbr-east-03.cleardb.com", "b86ee8b785f9c5", "bc878095", "heroku_053062795ec22b7");
 
 	if(mysqli_connect_errno()) {
 		echo "Failed to connect: " . mysqli_connect_errno();
