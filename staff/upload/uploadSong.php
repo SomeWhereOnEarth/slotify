@@ -151,6 +151,20 @@ include("../process.php");
                                     </select>
                                 </div>
                                 <div>
+                                    <label for="genre"><b>Choose a genre:</b></label><br>
+                                    <select id="genre" name="genre">
+                                    <?php
+                                    if ($result15->num_rows > 0) {
+                                        while($row = $result15->fetch_assoc()) {
+                                    ?>
+                                        <option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
+                                    <?php
+                                        }
+                                        }
+                                    ?>
+                                    </select>
+                                </div>
+                                <div>
                                     <label for="duration"><b>Choose a times:</b></label><br>
                                     <input type="time" id="duration" name="duration" min="00:00" max="10:00" required>
                                 </div>
