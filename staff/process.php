@@ -184,6 +184,9 @@ $result12 = $conn->query($sql_12);
 $sql_13 = "SELECT * FROM albums;";
 $result13 = $conn->query($sql_13);
 
+$sql_15 = "SELECT * FROM genres;";
+$result15 = $conn->query($sql_15);
+
 // DELETE album
 if(isset($_GET['song_id'])) {
   $song_id = $_GET['song_id'];
@@ -200,10 +203,11 @@ if(isset($_POST['song_upload'])) {
   $song_name = $_POST['song_name'];
   $artist = $_POST['artist'];
   $album = $_POST['album'];
+  $genre = $_POST['genre'];
   $duration = $_POST['duration'];
   $pathsong = "assets/music/" . basename($_FILES["fileToUpload"]["name"]);
 
-  $sql = "INSERT INTO songs VALUES ('','$song_name','$artist','$album','none','$duration','$pathsong','','0');";
+  $sql = "INSERT INTO songs VALUES ('','$song_name','$artist','$album','$genre','$duration','$pathsong','','0');";
 
     if ($conn->query($sql) === TRUE) {
 
