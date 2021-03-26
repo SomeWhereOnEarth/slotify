@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to slotify!</title>
+    <link rel="icon" type="image/png" href="img/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="img/images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>Welcome to slotify<br> stream music online</h1>
+                <span class="square"></span>
+                <p>
+                    With Slotify, it’s easy to find the right music for every moment – on your phone, your computer, your tablet and more. 
+                    There are hundred of tracks on Slotify. So whether you’re behind the wheel, working out, partying or relaxing, the right music is always at your fingertips. Choose what you want to listen to, or let Slotify surprise you. 
+                    You can also browse through the collections of artists, and create a playlists and just sit back. Soundtrack your life with Slotify. Signup and listen for free.
+                </p>
+                <br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Browse</a></li>
+            <li><a href="#offer">Get's start</a></li>
+            <li><a href="#contact">Join us</a></li>
+        </ul>
+    </nav>
+    <div class="container-2" id="menuBtn" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+
+
+    <!----About----->
+    <section id="about">
+        <div class="about-left-col">
+            <center><img src="img/images/ez.png"></center>
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>100% free music</h1>
+                <span class="square"></span>
+                <p>
+                    Slotify is a digital music streaming service that gives you access to hundred of songs from artists all over the world, like NCS, BenMusic, Artlist.io.
+                    Basic functions such as playing music are totally free.
+                </p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>"Slotify is a platform: just a basic of web application."</h2>
+                <h3>----Kongpop----</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-----features----->
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="img/images/pic-1.png">
+                <h4>Listen Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device.</p>
+            </div>
+            <div class="feature-col">
+                <img src="img/images/pic-2.png">
+                <h4>Fasted System</h4>
+                <p>Listen from web browser on best performance on any device.</p>
+            </div>
+            <div class="feature-col">
+                <img src="img/images/pic-3.png">
+                <h4>Unlimited Access</h4>
+                <p>Choose what you'd like to listen from our extensive subscription library.</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <a href="register.php"><button class="btn-2">Start for free</button></a>
+        </div>
+    </section>
+
+    <!---------audio--------->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="couse-text">
+                    <h1>Browse Our Top music</h1>
+                    <span class="square"></span><br><br>
+                    <div class="body">
+                        <div class="player-container">
+                                <!--song-->
+                            <div class="img-container">
+                                <img src="assets/images/artwork/clearday.jpg" id="images" alt="Album art">
+                            </div>
+                            <h2 id="title">clearday</h2>
+                            <h3 id="artist">Ben sound</h3>
+                            <audio src="assets/music/bensound-clearday.mp3"></audio>
+                            <!--Progress-->
+                            <div class="progress-container" id="progress-container">
+                                <div class="progress" id="progress"></div>
+                                <div class="duration-wrapper">
+                                    <span id="current-time">0:00</span>
+                                    <span id="duration">1:29</span>
+                                </div>
+                            </div>
+                            <!--Control-->
+                            <div class="player-controls">
+                                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                                <i class="fas fa-play main-button" id="play" title="Play"></i>
+                                <i class="fas fa-forward" id="next" title="Next"></i>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="img/images/course.svg">
+            </div>
+        </div>
+    </section>
+
+    <!--Offer-->
+    <section id="offer">
+        <div class="about-left-col">
+            <center><img src="img/images/offer.svg"></center>
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Start NOW</h1>
+                <span class="square"></span>
+                <p>
+                    With Slotify, it’s easy to find the right music for every moment – on your phone, your computer, your tablet and more.
+                    There are hundred of tracks on Slotify. So whether you’re behind the wheel, working out, partying or relaxing, 
+                    the right music is always at your fingertips. Choose what you want to listen to, let Spotify surprise you.
+                </p>
+                <a href="register.php"><button class="btn-2" href="register.php">Start now</button></a>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section id="contact">
+        <div class="contact-col">
+            <div class="about-text">
+                <h1>Sign up or Sign in to <br>join our community</h1>
+                <span class="square"></span>
+                <p>
+                    Slotify is a web app that recognises music around you. It is the best way to discover, 
+                    explore the music you love. slotify connects more than 1 people. 
+                    It took us 1 minute to reach 1 user, 10 minute to reach 2 users, 1 hour to go from 1 to 4 users... 
+                    It's an amazing..., available now in the webbrowser. And we're always looking for new 
+                    and innovative ways to delight our users.
+                </p>
+                <a href="register.php"><button class="common-btn btn-4">Sign in & Sign up</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-row">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About us</h4>
+                        <small>Request</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a nonprofit</small><br>
+                        <small>Coporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-row">
+                    <div class="footer-info">
+                        <div class="copyright-text">
+                            <small>somewhere@gmail.com</small><br>
+                            <small>copyright 2021</small>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="img/images/logo.png">
+                            <a href="register.php"><button class="common-btn">Hello World</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+    <script>
+        function myFunction(x) {
+            var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0px";
+                x.classList.toggle("change");
+            }else{
+                sideNav.style.right = "-250px";
+                x.classList.toggle("change");
+            }
+        }
+        }
+    </script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+</body>
+</html>
